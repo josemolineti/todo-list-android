@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo do tema para a atividade -->
+    <style name="AppTheme.Activity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Atributos de estilo para a atividade -->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>
