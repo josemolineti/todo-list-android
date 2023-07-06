@@ -5,4 +5,32 @@
         <!-- Atributos de estilo para a atividade -->
         <item name="android:windowBackground">@android:color/white</item>
     </style>
+
+    <style name="Barra_Superior">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/barra_superior</item>
+    </style>
+
+    <style name="ContainerFundo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">550dp</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:background"> @drawable/container_fundo</item>
+    </style>
+
+    <style name="IcSuperior">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/bg_btn_principal</item>
+    </style>
+
+    <style name="TituloTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
 </resources>
