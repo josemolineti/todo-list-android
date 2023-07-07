@@ -14,9 +14,9 @@
 
     <style name="ContainerFundo">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">550dp</item>
-        <item name="android:layout_margin">30dp</item>
-        <item name="android:background"> @drawable/container_fundo</item>
+        <item name="android:layout_height">500dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/container_fundo</item>
     </style>
 
     <style name="IcSuperior">
@@ -30,7 +30,24 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/poppins_semibold</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_margin">10dp</item>
         <item name="android:layout_marginLeft">10dp</item>
+
+    </style>
+
+    <style name="task">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:background">@drawable/bg_task</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="TaskPrioridade">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:background">@drawable/task_prioridade</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 </resources>

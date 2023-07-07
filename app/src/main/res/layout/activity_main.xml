@@ -7,22 +7,49 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-<!--    MainActivity<FrameLayout-->
-<!--        android:layout_width="411dp"-->
-<!--        android:layout_height="150dp"-->
-<!--        android:background="@color/fundos"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent">-->
 
-<!--    </FrameLayout>-->
+
 
     <View
-        style="@style/ContainerFundo"
-        app:layout_constraintTop_toBottomOf="@+id/barraSuperior"
-        app:layout_constraintBottom_toTopOf="@id/floatingActionButton"
+        style="@style/task"
+        app:layout_constraintEnd_toEndOf="@+id/container_fundo"
+        app:layout_constraintStart_toStartOf="@+id/container_fundo"
+        app:layout_constraintTop_toTopOf="@+id/container_fundo" />
 
-         />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_fundo"
+        style="@style/ContainerFundo"
+        app:layout_constraintBottom_toTopOf="@id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraSuperior"/>
+
+        <ImageView
+            android:id="@+id/teste_task"
+            style="@style/task"
+            app:layout_constraintTop_toTopOf="@+id/container_fundo"
+            app:layout_constraintStart_toStartOf="@+id/container_fundo"
+            app:layout_constraintEnd_toEndOf="@+id/container_fundo"/>
+
+            <View
+                android:id="@+id/task_prioridade"
+                style="@style/TaskPrioridade"
+                app:layout_constraintStart_toStartOf="@+id/teste_task"
+                app:layout_constraintTop_toTopOf="@id/teste_task" />
+    
+            <TextView
+                style="@style/TituloTextView"
+                android:text="Trabalho de Casa"
+                app:layout_constraintStart_toStartOf="@id/teste_task"
+                app:layout_constraintTop_toBottomOf="@id/task_prioridade"
+                />
+
+
+
+
+
+
+
 
     <View
         android:id="@+id/barraSuperior"
@@ -34,11 +61,19 @@
 
         />
 
+
+
+
+
+
+
+
     <Button
         android:id="@+id/botao_more"
         style="@style/IcSuperior"
         android:drawableRight="@drawable/ic_more"
         android:layout_marginRight="20dp"
+
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="@+id/barraSuperior"
@@ -54,7 +89,9 @@
         android:textColor="@color/white"
         android:layout_marginLeft="50dp"
         app:layout_constraintStart_toStartOf="@id/barraSuperior"
-        app:layout_constraintTop_toTopOf="@+id/barraSuperior" />
+        app:layout_constraintTop_toTopOf="@+id/barraSuperior"
+        app:layout_constraintBottom_toBottomOf="@+id/barraSuperior"
+        />
 
 
 
