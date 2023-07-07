@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Estilo do tema para a atividade -->
     <style name="AppTheme.Activity" parent="Theme.AppCompat.Light.NoActionBar">
@@ -32,16 +31,17 @@
         <item name="android:textSize">18sp</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_marginLeft">10dp</item>
-
     </style>
 
     <style name="task">
         <item name="android:layout_width">300dp</item>
         <item name="android:layout_height">110dp</item>
         <item name="android:background">@drawable/bg_task</item>
-        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <!--<item name="android:layout_margin">20dp</item>
         <item name="android:layout_marginStart">20dp</item>
-        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item> -->
+
     </style>
 
     <style name="TaskPrioridade">
@@ -49,5 +49,6 @@
         <item name="android:layout_height">22dp</item>
         <item name="android:background">@drawable/task_prioridade</item>
         <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
     </style>
 </resources>
