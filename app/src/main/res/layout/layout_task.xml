@@ -13,16 +13,85 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            >
 
-            <View
-                android:id="@+id/task_prioridade"
-                style="@style/TaskPrioridade" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
 
-            <TextView
-                style="@style/TituloTextView"
-                android:layout_marginTop="1dp"
-                android:text="Trabalho de Casa" />
+                <View
+                    android:id="@+id/task_prioridade"
+                    style="@style/TaskPrioridade" />
+
+                <TextView
+                    style="@style/TituloTextView"
+                    android:layout_marginTop="1dp"
+                    android:text="Example" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right"
+
+                >
+
+                <ImageView
+                    style="@style/BtnTaskOptions"
+                    android:id="@+id/delete_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+
+
+                    />
+
+                <ImageView
+                    style="@style/BtnTaskOptions"
+                    android:id="@+id/edit_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit_task"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cloack_task"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 dez."
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
 

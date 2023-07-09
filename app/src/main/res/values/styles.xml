@@ -14,22 +14,29 @@
     <style name="ContainerFundo">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">500dp</item>
-        <item name="android:layout_margin">20dp</item>
         <item name="android:background">@drawable/container_fundo</item>
+
     </style>
 
-    <style name="IcSuperior">
+    <style name="IcSuperior" >
         <item name="android:layout_width">35dp</item>
         <item name="android:layout_height">35dp</item>
+        <item name="android:layout_margin">20dp</item>
         <item name="android:background">@drawable/bg_btn_principal</item>
     </style>
+
+    <style name="StyleSwitch" >
+        <item name="thumbTint">@color/corThumbAtivadoClaro</item>
+        <item name="trackTint">@color/corTrackAtivadoClaro</item>
+    </style>
+
 
     <style name="TituloTextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/poppins_semibold</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">20dp</item>
         <item name="android:layout_marginLeft">10dp</item>
     </style>
 
@@ -50,5 +57,10 @@
         <item name="android:background">@drawable/task_prioridade</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="BtnTaskOptions">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_margin">5dp</item>
     </style>
 </resources>

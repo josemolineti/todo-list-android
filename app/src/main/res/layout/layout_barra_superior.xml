@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/barraSuperior"
+        style="@style/Barra_Superior"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/titulo_principal"
+            style="@style/TituloTextView"
+            android:text="Lista de Tarefas"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+
+            <!-- TERMINAR SWITCH
+                 MUDAR COR AO ALTERAR E FAZER FUNÇÕES- CHAT GPT
+
+             !-->
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_theme"
+                style="@style/StyleSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/botao_more"
+                style="@style/IcSuperior"
+                android:src="@drawable/ic_more"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
