@@ -8,6 +8,7 @@ public class TaskActivity {
     private Calendar data;
     private Calendar meta;
     private String descricao;
+    private boolean concluido = false;
 
     public TaskActivity() {
 
@@ -51,6 +52,14 @@ public class TaskActivity {
 
     public void setMeta(Calendar meta) {
         this.meta = meta;
+    }
+
+    public boolean isConcluido() {
+        return concluido;
+    }
+
+    public void setConcluido(boolean concluido) {
+        this.concluido = concluido;
     }
 }
 

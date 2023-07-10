@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         ImageView botaoAdd = findViewById(R.id.floatingActionButton);
-
         botaoAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,7 +77,3 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-    //#LinearLayout linearLayout = findViewById(R.id.container_fundo);
-    //View remove = findViewById(R.id.task1);
-      //          linearLayout.removeView(remove);
-        //                Toast.makeText(MainActivity.this, "Aaaaaaaaaaaaaa", Toast.LENGTH_SHORT).show();
