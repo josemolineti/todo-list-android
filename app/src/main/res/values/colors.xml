@@ -10,5 +10,6 @@
     <color name="corThumbAtivadoEscuro">#000000</color>
     <color name="corTrackAtivadoClaro">#CCCCCC</color>
     <color name="corTrackAtivadoEscuro">#CCCCCC</color>
+    <color name="popUp">#F1F2F4</color>
 
 </resources>

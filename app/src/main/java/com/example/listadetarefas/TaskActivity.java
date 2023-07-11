@@ -3,15 +3,27 @@ package com.example.listadetarefas;
 import java.util.Calendar;
 
 public class TaskActivity {
+    private String id;
     private String titulo;
     private String prioridade;
     private Calendar data;
-    private Calendar meta;
+    private String dataFormat;
+    private Calendar conclusao;
+    private String conclusaoFormat;
     private String descricao;
     private boolean concluido = false;
 
     public TaskActivity() {
 
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitulo() {
@@ -46,12 +58,12 @@ public class TaskActivity {
         this.descricao = descricao;
     }
 
-    public Calendar getMeta() {
-        return meta;
+    public Calendar getConclusao() {
+        return conclusao;
     }
 
-    public void setMeta(Calendar meta) {
-        this.meta = meta;
+    public void setConclusao(Calendar conclusao) {
+        this.conclusao = conclusao;
     }
 
     public boolean isConcluido() {
@@ -60,6 +72,22 @@ public class TaskActivity {
 
     public void setConcluido(boolean concluido) {
         this.concluido = concluido;
+    }
+
+    public String getDataFormat() {
+        return dataFormat;
+    }
+
+    public void setDataFormat(String dataFormat) {
+        this.dataFormat = dataFormat;
+    }
+
+    public String getConclusaoFormat() {
+        return conclusaoFormat;
+    }
+
+    public void setConclusaoFormat(String conclusaoFormat) {
+        this.conclusaoFormat = conclusaoFormat;
     }
 }
 
