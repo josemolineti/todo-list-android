@@ -48,7 +48,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:gravity="right"
+                android:gravity="end"
 
                 >
 
@@ -77,21 +77,21 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
                     >
 
                     <CheckBox
                         android:id="@+id/checkBox"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_cloack_task"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:clickable="true"
                         android:focusable="true"
                         />

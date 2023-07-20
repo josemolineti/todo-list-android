@@ -2,7 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#ff0000</color>
+    <color name="red">#E57373</color>
+    <color name="yellow">#FFD54F</color>
+    <color name="green">#81C784</color>
     <color name="fundos">#CCCCCC</color>
     <color name="principal">#3498db</color>
     <color name="cinza_container">#f5f5f5</color>

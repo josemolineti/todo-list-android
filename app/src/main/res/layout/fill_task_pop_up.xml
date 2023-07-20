@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
 
     >
 
@@ -22,42 +23,60 @@
             />
 
         <LinearLayout
-            android:id="@+id/selected_date_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="20dp"
-            android:background="@drawable/string_shape"
-            android:padding="3dp"
+
             >
 
-            <ImageView
+            <LinearLayout
+                android:id="@+id/selected_date_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
-                android:src="@drawable/ic_cloack_task"
-                android:clickable="true"
-                android:focusable="true"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/string_shape"
+                android:padding="3dp"
+                >
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_cloack_task"
+                    android:clickable="true"
+                    android:focusable="true"
+
+
+                    />
+                <TextView
+                    android:id="@+id/selected_date_text"
+                    style="@style/TituloTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="00/00/0000"
+                    />
+
+
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_prioridade"
 
                 />
-            <TextView
-                android:id="@+id/selected_date_text"
-                style="@style/TituloTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:text="00/00/000"
-                />
-
 
         </LinearLayout>
+
 
         <DatePicker
             android:id="@+id/select_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+
 
             />
 

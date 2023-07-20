@@ -41,12 +41,9 @@ public class MainActivity extends AppCompatActivity {
         botaoAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LinearLayout linearLayout = findViewById(R.id.container_fundo);
-                TaskActivity task = new TaskActivity();
-                fillTaks(task);
-                View include = LayoutInflater.from(MainActivity.this).inflate(R.layout.layout_task, linearLayout, false);
-                include.setTag(gerarId());
-                linearLayout.addView(include);
+
+                fillTaks();
+
 
             }
 
@@ -83,8 +80,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void createTask() {
+        LinearLayout linearLayout = findViewById(R.id.container_fundo);
+        TaskActivity task = new TaskActivity();
+        View include = LayoutInflater.from(MainActivity.this).inflate(R.layout.layout_task, linearLayout, false);
+        include.setTag(gerarId());
+        linearLayout.addView(include);
+    }
 
-    public void fillTaks(TaskActivity task) {
+
+    public void fillTaks() {
         LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
         View popupView = inflater.inflate(R.layout.fill_task_pop_up, null);
         PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);

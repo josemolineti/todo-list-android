@@ -51,10 +51,32 @@
     <style name="TaskPrioridade">
         <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">22dp</item>
-        <item name="android:background">@drawable/task_prioridade</item>
+        <item name="android:background">@drawable/task_prioridade_shape</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_marginBottom">0dp</item>
     </style>
+    <style name="TaskPrioridadeRed">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:background">@drawable/task_prioridade_red</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="TaskPrioridadeYellow">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:background">@drawable/task_prioridade_yellow</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="TaskPrioridadeGreen">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:background">@drawable/task_prioridade_green</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
     <style name="BtnTaskOptions">
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
